@@ -1,4 +1,4 @@
-// Filters CSV rows, keeping only those with given maximum age
+// Filters CSV rows, keeping only those with given minimum age
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
