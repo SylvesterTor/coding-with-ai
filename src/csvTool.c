@@ -3,8 +3,8 @@
 #include <stdlib.h>
 #include <string.h>
 
-constexpr size_t LINE_MAX = 100; // Maximum line length
-const char DELIMITER[] = ",";    // CSV delimiter
+constexpr size_t LINE_MAX = 100;  // Maximum line length
+const char DELIMITER[] = ",;\t|"; // Accepted input delimiters
 
 char *ifile, *ofile;
 unsigned filter_age_min;
