@@ -11,14 +11,13 @@ unsigned filter_age_min;
 FILE *istream, *ostream;
 
 const char USAGE[] =
-    R"(Filters CSV rows, keeping only those with given minimum age
-%s minimum-age [input-file] [output-file]
-
-Example: 
-%s 18 input.csv output.csv
-%s 18 input.csv (outputs to stdout)
-%s 18           (inputs from stdin, outputs to stdout)
-)";
+    "Filters CSV rows, keeping only those with given minimum age\n"
+    "%s minimum-age [input-file] [output-file]\n"
+    "\n"
+    "Example:\n"
+    "%s 18 input.csv output.csv\n"
+    "%s 18 input.csv (outputs to stdout)\n"
+    "%s 18           (inputs from stdin, outputs to stdout)\n";
 
 void filter_stream(FILE *istream, FILE *ostream) {
   char line[LINE_MAX];
