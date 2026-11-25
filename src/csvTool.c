@@ -22,6 +22,7 @@ const char USAGE[] =
 void filter_stream(FILE *istream, FILE *ostream) {
   char line[LINE_MAX];
   char *fgets_return;
+
   char *name, *age_str;
   size_t line_no = 0;
 
