@@ -12,4 +12,4 @@ The tests require Python 3 and Clang to be available on `PATH`. From the reposit
 python -m unittest discover -s tests -v
 ```
 
-The test suite compiles `src/hello.c` using `compile_flags.txt` into a temporary directory, then checks that short or incomplete CSV rows do not crash the filter and that the minimum-age filtering still works. The temporary executable and test data are removed after the tests finish.
+The test suite compiles `src/csvTool.c` using `compile_flags.txt` into a temporary directory. It checks CSV filtering, accepted input delimiters, and that short or incomplete rows do not crash the filter. The temporary executable and test data are removed after the tests finish.
